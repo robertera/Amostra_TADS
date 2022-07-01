@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="450.0" prefWidth="650.0" spacing="5.0" stylesheets="@../css/estilo_cadastro_aluno.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.trabbim.telas.CadastroAluno">
+
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+   <Label alignment="CENTER" prefHeight="23.0" prefWidth="625.0" style="-fx-background-color: #1E90FF;" text="CADASTRO DE ALUNO" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="15.0" />
+      </font>
+      <effect>
+         <Glow />
+      </effect>
+      <VBox.margin>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </VBox.margin>
+   </Label>
+
+    <Label text="CPF:" GridPane.rowIndex="1">
+      <font>
+         <Font name="Constantia Bold" size="15.0" />
+      </font>
+      <VBox.margin>
+         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+      </VBox.margin></Label>
+    <TextField fx:id="tfCpf" prefWidth="540.0" promptText="Digite o CPF" style="-fx-border-radius: 10;">
+      <VBox.margin>
+         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+      </VBox.margin>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets></TextField>
+
+    <Label text="NOME:" GridPane.rowIndex="2">
+      <font>
+         <Font name="Constantia Bold" size="15.0" />
+      </font>
+      <VBox.margin>
+         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+      </VBox.margin></Label>
+    <TextField fx:id="tfNome" promptText="Digite o Nome">
+      <VBox.margin>
+         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+      </VBox.margin></TextField>
+
+    <Label text="EMAIL:" GridPane.rowIndex="3">
+      <font>
+         <Font name="Constantia Bold" size="15.0" />
+      </font>
+      <VBox.margin>
+         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+      </VBox.margin></Label>
+    <TextField fx:id="tfEmail" promptText="Digite o Email">
+      <VBox.margin>
+         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+      </VBox.margin></TextField>
+
+    <Label text="TELEFONE:" GridPane.rowIndex="4">
+      <font>
+         <Font name="Constantia Bold" size="15.0" />
+      </font>
+      <VBox.margin>
+         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+      </VBox.margin></Label>
+    <TextField fx:id="tfTelefone" promptText="Digite o Telefone">
+      <VBox.margin>
+         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+      </VBox.margin></TextField>
+
+    <Label text="DATA MATRICULA:" GridPane.rowIndex="5">
+      <font>
+         <Font name="Constantia Bold" size="15.0" />
+      </font>
+      <VBox.margin>
+         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+      </VBox.margin></Label>
+    <DatePicker fx:id="datePickerAno" promptText="Insira a data de matricula" GridPane.rowIndex="5">
+      <VBox.margin>
+         <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+      </VBox.margin></DatePicker>
+    
+    
+    <HBox alignment="TOP_CENTER" maxWidth="-Infinity" prefHeight="40.0" prefWidth="630.0" spacing="5.0">
+        <Button onAction="#cadastrar" text="Adicionar" textFill="#1f9e05">
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </HBox.margin>
+         <font>
+            <Font name="Constantia Bold" size="14.0" />
+         </font>
+      </Button>
+        <Button onAction="#limpar" styleClass="botao-limpar" text="Limpar" textFill="RED">
+         <HBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </HBox.margin>
+         <font>
+            <Font name="Constantia Bold" size="14.0" />
+         </font>
+      </Button>
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <VBox.margin>
+         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+      </VBox.margin>
+    </HBox>
+
+    
+        
+</VBox>

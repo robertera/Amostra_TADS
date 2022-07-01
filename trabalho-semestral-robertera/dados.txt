@@ -1,0 +1,5 @@
+[ALUNO]
+	Nome: aaa; Cpf: 11122233; Email: aaa; Telefone: 1122254; Data-Matricula: 2022-04-12
+	Nome: bbb; Cpf: 15151; Email: cccce; Telefone: 58484818; Data-Matricula: 2022-04-01
+[PROFESSOR]
+[CURSO]

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ifpr.pgua.eic.trabbim.telas.Listas">
+   <children>
+      <ListView fx:id="listaAlunos" layoutX="25.0" layoutY="153.0" onMouseClicked="#atualizaStatus" prefHeight="550.0" prefWidth="250.0" style="-fx-border-color: #4169E1; -fx-background-color: #E6E6FA; -fx-border-radius: 10; -fx-border-width: 2;" />
+      <ListView fx:id="listaProfessores" layoutX="350.0" layoutY="153.0" onMouseClicked="#atualizaStatus" prefHeight="550.0" prefWidth="250.0" style="-fx-border-color: #4169E1; -fx-background-color: #E6E6FA; -fx-border-radius: 10; -fx-border-width: 2;" />
+      <ListView fx:id="listaCursos" layoutX="675.0" layoutY="153.0" onMouseClicked="#atualizaStatus" prefHeight="550.0" prefWidth="250.0" style="-fx-border-color: #4169E1; -fx-background-color: #E6E6FA; -fx-border-radius: 10; -fx-border-width: 2;" />
+      <Label alignment="CENTER" layoutX="5.0" layoutY="3.0" prefHeight="23.0" prefWidth="940.0" style="-fx-background-color: #1E90FF;" text="LISTAS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <TextArea fx:id="taStatus" editable="false" layoutX="275.0" layoutY="766.0" prefHeight="70.0" prefWidth="400.0" style="-fx-border-color: #4169E1; -fx-background-color: #E6E6FA; -fx-border-radius: 10;">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" />
+         </padding>
+      </TextArea>
+      <Label alignment="CENTER" layoutX="25.0" layoutY="85.0" prefHeight="23.0" prefWidth="250.0" style="-fx-background-color: #1E90FF;" text="ALUNOS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="350.0" layoutY="85.0" prefHeight="23.0" prefWidth="250.0" style="-fx-background-color: #1E90FF;" text="PROFESSORRES" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label alignment="CENTER" layoutX="675.0" layoutY="85.0" prefHeight="23.0" prefWidth="250.0" style="-fx-background-color: #1E90FF;" text="CURSOS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <TextField fx:id="tfNomeAluno" layoutX="25.0" layoutY="119.0" maxHeight="-Infinity" maxWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onKeyTyped="#mostraAlunos" prefHeight="25.0" prefWidth="250.0" promptText="Digite para pesquisar o aluno">
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="tfNomeProfessor" layoutX="350.0" layoutY="119.0" maxHeight="-Infinity" maxWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onKeyTyped="#mostraProfessores" prefHeight="25.0" prefWidth="250.0" promptText="Digite para pesquisar o professor">
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="tfNomeCurso" layoutX="675.0" layoutY="119.0" maxHeight="-Infinity" maxWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" onKeyTyped="#mostraCursos" prefHeight="25.0" prefWidth="250.0" promptText="Digite para pesquisar o curso">
+         <padding>
+            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </opaqueInsets>
+      </TextField>
+      <Label alignment="CENTER" layoutX="350.0" layoutY="737.0" prefHeight="23.0" prefWidth="250.0" style="-fx-background-color: #1E90FF;" text="INFORMAÇÔES" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>
